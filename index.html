@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="container2">
+
+            <p>- CALCULATOR -</p>
+
+            <input type="text" id = "numbers" disabled>
+
+            <div class="buttons" id="row1">
+                <button onclick="clear1 ()">AC</button>
+                <button onclick="backspace ()">DEL</button>
+                <button onclick="percent()">%</button>
+                <button class="operation" onclick="append('/')">/</button>
+            </div><!--row1-->
+
+            <div class="buttons" id="row2">
+                <button onclick="append (7)">7</button>
+                <button onclick="append (8)">8</button>
+                <button onclick="append (9)">9</button>
+                <button class="operation" onclick="append ('*')">x</button>
+            </div><!--row2-->
+
+            <div class="buttons" id="row3">
+                <button onclick="append (4)">4</button>
+                <button onclick="append (5)">5</button>
+                <button onclick="append (6)">6</button>
+                <button class="operation" onclick="append ('-')">-</button>
+            </div><!--row3-->
+
+            <div class="buttons" id="row4">
+                <button onclick="append (1)">1</button>
+                <button onclick="append (2)">2</button>
+                <button onclick="append (3)">3</button>
+                <button class="operation" onclick="append ('+')">+</button>
+            </div><!--row4-->
+
+            <div class="buttons" id="row5">
+                <button onclick="append ('00')">00</button>
+                <button onclick="append (0)">0</button>
+                <button onclick="append ('.')">.</button>
+                <button class="operation" onclick="calculate()">=</button>
+            </div><!--row5-->
+
+
+        </div><!--container2-->
+    </div><!--container-->
+</body>
+</html>
+
+<script src="function.js"></script>
